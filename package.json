@@ -1,0 +1,28 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "Teste com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allysr/SauceDemo.git"
+  },
+  "keywords": [
+    "cypress",
+    "javascript",
+    "automatização"
+  ],
+  "author": "allysr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allysr/SauceDemo/issues"
+  },
+  "homepage": "https://github.com/Allysr/SauceDemo#readme",
+  "dependencies": {
+    "cypress": "^12.5.1"
+  }
+}
