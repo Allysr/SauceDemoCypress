@@ -39,9 +39,7 @@ describe("Login", () => {
       cy.get('[data-test="password"]').type(Cypress.env("password"));
       cy.get('[data-test="login-button"]').click();
       cy.get('h3[data-test="error"]')
-        .contains(
-          "Epic sadface: Username is required"
-        )
+        .contains("Epic sadface: Username is required")
         .should("be.visible");
     });
 
@@ -49,11 +47,8 @@ describe("Login", () => {
       cy.get('[data-test="password"]').type(Cypress.env("password"));
       cy.get('[data-test="login-button"]').click();
       cy.get('h3[data-test="error"]')
-        .contains(
-          "Epic sadface: Username is required"
-        )
+        .contains("Epic sadface: Username is required")
         .should("be.visible");
     });
   });
-  
 });
