@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/Allysr/SauceDemo#readme",
   "dependencies": {
-    "cypress": "^12.5.1"
+    "cypress": "^10.6.0"
   }
 }
