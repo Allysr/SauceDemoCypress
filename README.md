@@ -2,14 +2,16 @@
 <br> Estudo de Cypress no site Sauce Demo
 </h1>
 
-<h4 align="center">
-  Alguns BDD's usados para realização dos testes no cypress:
-</h4>
 
 <div align="center">
 <img width="800px" alt="Site para testes automatizados CuraHealthcare" src="https://i.imgur.com/hJSmZi3.png" />
 </div>
 <br>
+
+
+<h4 align="center">
+  Alguns BDD's usados para realização dos testes no cypress:
+</h4>
 
 ```diff  
 • Falha ao fazer login
