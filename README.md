@@ -6,6 +6,11 @@
   Alguns BDD's usados para realização dos testes no cypress:
 </h4>
 
+<div align="center">
+<img width="800px" alt="Site para testes automatizados CuraHealthcare" src="https://i.imgur.com/hJSmZi3.png" />
+</div>
+<br>
+
 ```diff  
 • Falha ao fazer login
 Dado que o usuário tenha cadastro
