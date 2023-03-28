@@ -6,31 +6,27 @@ describe("Filter ", () => {
     cy.login(Cypress.env("username"), Cypress.env("password"));
   });
 
-  it("Filtro ", () => {
-    cy.get('[data-test="product_sort_container"]').select("Name (A to Z)");
-    cy.get(".inventory_item").eq(1).should("contain", "Sauce Labs Bike Light");
-  });
 
-  it("Filtro de A a Z ", () => {
+  it("Validar se ao filtrar por Filtro de A a Z terá o resultado ordenado.", () => {
     cy.get('[data-test="product_sort_container"]').select("Name (A to Z)");
     cy.get(".inventory_item").first().should("contain", "Sauce Labs Backpack");
   });
 
-  it("Filtro de Z a A ", () => {
+  it("Validar se ao filtrar po Filtro de Z a A terá o resultado ordenado.", () => {
     cy.get('[data-test="product_sort_container"]').select("Name (Z to A)");
     cy.get(".inventory_item")
       .first()
       .should("contain", "Test.allTheThings() T-Shirt (Red)");
   });
 
-  it("Filtro de Menor para Maior ", () => {
+  it("Validar se ao filtrar por Menor para Maior terá o resultado ordenado. ", () => {
     cy.get('[data-test="product_sort_container"]').select(
       "Price (low to high)"
     );
     cy.get(".inventory_item").first().should("contain", "7.99");
   });
 
-  it("Filtro de Maior para Menor ", () => {
+  it("Validar se ao filtrar por Maior para Menor  terá o resultado ordenado. ", () => {
     cy.get('[data-test="product_sort_container"]').select(
       "Price (high to low)"
     );

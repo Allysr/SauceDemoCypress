@@ -10,21 +10,21 @@
 
 
 <h4 align="center">
-  Alguns BDD's usados para realização dos testes no cypress:
+  Alguns cenários usados para realização dos testes no cypress:
 </h4>
 
 ```diff  
-• Validar se ao inserir dados inválidos no login aparecerá uma mensagem de falha.
-Dado que o usuário tenha cadastro
-E insira nome ou senha inválidos
-Quando clicar 'login'
-Então deve aparecer a mensagem "Epic sadface: Username and password do not match any user in this service".
-
 • Validar se ao inserir dados validos o login será bem-sucedido.
 Dado que o usuário tenha cadastro
 E insira os dados válidos
 Quando clicar em 'login'
 Então deve redirecionar para a página de produtos.
+
+• Validar se ao inserir dados inválidos no login aparecerá uma mensagem de falha.
+Dado que o usuário tenha cadastro
+E insira nome ou senha inválidos
+Quando clicar 'login'
+Então deve aparecer a mensagem "Epic sadface: Username and password do not match any user in this service".
 
 • Validar se ao clicar em login com os campos vazios terá um erro.
 Dado que o usário esteja tentando realizar o login
@@ -57,6 +57,7 @@ E acionar o filtro na tela de listagem
 Quando clicar no filtro de "Maior para menor"
 Então devem aparecer todos os produtos desse filtro.
 
+
 • Validar se ao realizar os passos corretos a compra terá sucesso.
 Dado que o usuário queira comprar um produto
 E clique em Add to Card
@@ -83,6 +84,7 @@ Dado que o usuário esteja na página "Your cart"
 E queira remover um item
 Quando clicar em "remove"
 Então deve ser removido o item.
+
 
 • Validar se ao clicar em All Items irá para a tela de produtos.
 Dado que o usuário esteja logado
