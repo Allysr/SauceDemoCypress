@@ -4,7 +4,7 @@
 
 
 <div align="center">
-<img width="800px" alt="Site para testes automatizados CuraHealthcare" src="https://i.imgur.com/hJSmZi3.png" />
+<img width="800px" alt="Site para testes automatizados Saucedemo" src="https://i.imgur.com/hJSmZi3.png" />
 </div>
 <br>
 
