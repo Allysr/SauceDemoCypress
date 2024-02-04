@@ -24,7 +24,8 @@ Então deve redirecionar para a página de produtos.
 Dado que o usuário tenha cadastro
 E insira nome ou senha inválidos
 Quando clicar 'login'
-Então deve aparecer a mensagem "Epic sadface: Username and password do not match any user in this service".
+Então deve aparecer a mensagem
+"Epic sadface: Username and password do not match any user in this service".
 
 • Validar se ao clicar em login com os campos vazios terá um erro.
 Dado que o usário esteja tentando realizar o login
