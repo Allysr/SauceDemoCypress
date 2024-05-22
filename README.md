@@ -76,7 +76,7 @@ Este documento descreve o plano de teste para o site Sauce demo
 
 #### Login
 
-- [ ] CT01 - Validar se ao inserir dados validos o login será bem-sucedido.
+- [x] CT01 - Validar se ao inserir dados validos o login será bem-sucedido.
 ````
 Dado que o usuário tenha cadastro
 E insira os dados válidos
@@ -84,7 +84,7 @@ Quando clicar em 'login'
 Então deve redirecionar para a página de produtos.
 ````
 
-- [ ] CT02 - Validar se ao inserir dados inválidos no login aparecerá uma mensagem de falha.
+- [x] CT02 - Validar se ao inserir dados inválidos no login aparecerá uma mensagem de falha.
 ````
 Dado que o usuário tenha cadastro
 E insira nome ou senha inválidos
