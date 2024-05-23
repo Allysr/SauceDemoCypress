@@ -22,6 +22,10 @@ class ValidacoesNavbar {
     cy.get(elementosNavbar.quantidadeItensCarrinho).should("not.exist");
   }
 
+  carrinhoContemItem(){
+    cy.get(elementosNavbar.quantidadeItensCarrinho).should("contain", "1")
+  }
+
 }
 
 export default new ValidacoesNavbar();

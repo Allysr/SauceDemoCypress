@@ -9,6 +9,10 @@ class TarefasProdutos {
     cy.get(elementosProdutos.selecionarItemBicicleta).click();
   }
 
+  removerMochilaCarrinho() {
+    cy.get(elementosProdutos.removerItemMochila).click();
+  }
+
   adicionarItensAoCarrinho() {
     this.adicionarMochilaAoCarrinho();
     this.adicionarBicicletaAoCarrinho();

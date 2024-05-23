@@ -192,15 +192,15 @@ Então devem aparecer todos os produtos desse filtro.
 
 Adicionar item ao carrinho
 
-- [ ] CT01 - Validar se ao clicar em add to card o produto aparerá no carrinho.
+- [x] CT01 - Validar se ao clicar em add to card o produto aparerá no carrinho.
 
 ```
-Dado que o usuário queira comprar um produto
+Dado que o usuário esteja na página de produtos
 Quando clicar em "add to card"
 Então deve aparecer o número '1' no icone do carrinho.
 ```
 
-- [ ] CT02 - Validar se ao clicar em remove o produto sairá do carrinho.
+- [x] CT02 - Validar se ao clicar em remove o produto sairá do carrinho.
 
 ```
 Dado que o usuário esteja na página de produtos
@@ -209,7 +209,7 @@ Quando clicar em "remove"
 Então deve diminuir um número no ícone de carrinho.
 ```
 
-- [ ] CT03 - Validar se ao clicar em remove o produto sairá da listagem.
+- [x] CT03 - Validar se ao clicar em remove o produto sairá da listagem.
 
 ```
 Dado que o usuário esteja na página "Your cart"
