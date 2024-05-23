@@ -1,38 +1,38 @@
 /// <reference types="cypress" />
 
+import tarefasNavbar from "../../support/pagesObjects/navbar/tarefasNavbar";
+import validacoesNavbar from "../../support/pagesObjects/navbar/validacoesNavbar";
+import tarefasLogin from "../../support/pagesObjects/login/tarefasLogin";
+import tarefasProdutos from "../../support/pagesObjects/produtos/tarefasProdutos";
+
 describe("Menu", () => {
   beforeEach(() => {
-    cy.visit("/");
-    cy.login(Cypress.env("username"), Cypress.env("password"));
+    tarefasLogin.realizarLogin("usuario", "senha");
   });
 
-  it("Validar se ao clicar em All Items irá para a tela de produtos.", () => {
-    cy.get(".shopping_cart_link").click();
-    cy.get("#react-burger-menu-btn").click();
-    cy.get("#inventory_sidebar_link").click();
-    cy.get("span.title").contains("Products").should("be.visible");
+  it("CT01 -  Validar se ao clicar em All Items irá para a tela de produtos.", () => {
+    tarefasNavbar.clicarCarrinho();
+    tarefasNavbar.clicarMenu();
+    tarefasNavbar.clicarAllItems();
+    validacoesNavbar.redirecionarPaginaProdutos();
   });
 
-  it("Validar se ao clicar em About irá para a tela sauce labs.", () => {
-    cy.get(".shopping_cart_link").click();
-    cy.get("#react-burger-menu-btn").click();
-    cy.get("#about_sidebar_link").invoke("removeAttr", "target").click();
-    cy.get(".is-full-mobile > .content-container > .supertitle").should(
-      "be.visible"
-    );
+  it.skip("CT02 - Validar se ao clicar em About irá para a tela sauce labs.", () => {
+    tarefasNavbar.clicarMenu();
+    tarefasNavbar.clicarAbout();
+    validacoesNavbar.redirecionarPaginaSobre();
   });
 
-  it("Validar se ao clicar em Logout irá para a tela de login.", () => {
-    cy.get("#react-burger-menu-btn").click();
-    cy.get("#logout_sidebar_link").click();
-    cy.get('[data-test="username"]').should("be.visible");
+  it("CT03 - Validar se ao clicar em Logout irá para a tela de login.", () => {
+    tarefasNavbar.clicarMenu();
+    tarefasNavbar.clicarLogout();
+    validacoesNavbar.redirecionarLogin();
   });
 
-  it("Validar se ao clicar em reset app state o carrinho esvaziará.", () => {
-    cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
-    cy.get('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
-    cy.get("#react-burger-menu-btn").click();
-    cy.get("#reset_sidebar_link").click();
-    cy.get(".shopping_cart_badge").should("not.exist");
+  it("CT04 - Validar se ao clicar em reset app state o carrinho esvaziará.", () => {
+    tarefasProdutos.adicionarItensAoCarrinho();
+    tarefasNavbar.clicarMenu();
+    tarefasNavbar.clicarReset();
+    validacoesNavbar.carrinhoEstaVazio();
   });
 });

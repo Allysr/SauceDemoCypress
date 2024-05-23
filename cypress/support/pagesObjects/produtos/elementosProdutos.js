@@ -1,3 +1,5 @@
 export const elementosProdutos ={
-    tituloPaginaProdutos: ".title"
+    tituloPaginaProdutos: ".title",
+    selecionarItemMochila: '[data-test="add-to-cart-sauce-labs-backpack"]',
+    selecionarItemBicicleta: '[data-test="add-to-cart-sauce-labs-bike-light"]'
 }
