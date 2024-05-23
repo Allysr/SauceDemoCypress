@@ -99,6 +99,13 @@ Dado que o usário esteja tentando realizar o login
 E não insira dados no <campo>
 Quando clicar em 'login'
 Então deve aparecer a mensagem 'Epic sadface: <campo> is required'.
+
+Exemplo:
+| campo    |
+| username |
+| password |
+
+
 ````
 
 <br>
@@ -200,7 +207,7 @@ Então deve ser removido o item.
 
 <br>
 
-Realizar compra
+Finalizar compra
 - [ ] CT01 - Validar se ao realizar os passos corretos a compra terá sucesso.
 ````
 Dado que o usuário queira comprar um produto
