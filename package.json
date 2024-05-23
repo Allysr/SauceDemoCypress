@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Allysr/SauceDemo.git"
+    "url": "git+https://github.com/Allysr/sauce-demo-web-test"
   },
   "keywords": [
     "cypress",
@@ -19,10 +19,10 @@
   "author": "allysr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Allysr/SauceDemo/issues"
+    "url": "https://github.com/Allysr/sauce-demo-web-test"
   },
-  "homepage": "https://github.com/Allysr/SauceDemo#readme",
+  "homepage": "https://github.com/Allysr/sauce-demo-web-test",
   "dependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^13.10.0"
   }
 }

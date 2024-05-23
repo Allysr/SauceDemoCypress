@@ -8,8 +8,6 @@ O objetivo desses testes é verificar a funcionalidade
 de carrinho e inserção de dados para finalizar a compra.
 
 
-
-
 ### O que foi utilizado:
 
 - Cypress
@@ -104,7 +102,6 @@ Exemplo:
 | campo    |
 | username |
 | password |
-
 
 ````
 

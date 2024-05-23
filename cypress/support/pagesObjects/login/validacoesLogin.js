@@ -2,13 +2,13 @@ import { elementosProdutos } from "../produtos/elementosProdutos";
 import { elementosLogin } from "./elementosLogin";
 
 class ValidacoesLogin {
-  validarRedirecionamentoParaPaginaProdutos() {
+  loginComSucesso() {
     cy.get(elementosProdutos.tituloPaginaProdutos)
       .contains("Products")
       .should("be.visible");
   }
 
-  validarLoginIncorreto() {
+  loginIncorreto() {
     cy.get(elementosLogin.mensagemLoginIncorreto)
       .contains(
         "Epic sadface: Username and password do not match any user in this service"
@@ -16,22 +16,17 @@ class ValidacoesLogin {
       .should("be.visible");
   }
 
-  validarUsuarioObrigatorio() {
+  usuarioObrigatorio() {
     cy.get(elementosLogin.mensagemLoginIncorreto)
-      .contains(
-        "Epic sadface: Username is required"
-      )
+      .contains("Epic sadface: Username is required")
       .should("be.visible");
   }
 
-  validarSenhaObrigatoria() {
+  senhaObrigatoria() {
     cy.get(elementosLogin.mensagemLoginIncorreto)
-      .contains(
-        "Epic sadface: Password is required"
-      )
+      .contains("Epic sadface: Password is required")
       .should("be.visible");
   }
-
 }
 
 export default new ValidacoesLogin();
