@@ -93,7 +93,7 @@ Então deve aparecer a mensagem
 "Epic sadface: Username and password do not match any user in this service".
 ````
 
-- [ ] CT03 - Validar se ao clicar em login com os campos vazios terá um erro.
+- [x] CT03 - Validar se ao clicar em login com os campos vazios terá um erro.
 ````
 Dado que o usário esteja tentando realizar o login
 E não insira dados no <campo>

@@ -4,42 +4,33 @@ import tarefasLogin from "../../support/pagesObjects/login/tarefasLogin";
 import validacoesLogin from "../../support/pagesObjects/login/validacoesLogin";
 
 describe("Login", () => {
-  beforeEach(() => {
-    cy.visit("/");
-  });
-
-  it("CT01 - Validar se ao inserir dados validos o login será bem-sucedido.", () => {
+  
+  it("CT01 - Deve realizar login com sucesso com dados válidos.", () => {
     tarefasLogin.realizarLogin("usuario", "senha");
     validacoesLogin.validarRedirecionamentoParaPaginaProdutos();
   });
 
-  context(
-    "CT02 - Validar se ao inserir dados inválidos no login aparecerá uma mensagem de falha.",
-    () => {
-      it("Falha no campo 'username'", () => {
-        tarefasLogin.realizarLogin("usuarioInvalido", "senha");
-        validacoesLogin.validarLoginIncorreto();
-      });
+  context("CT02 - Deve exibir mensagem de falha ao inserir dados inválidos no login.", () => {
+    it("Deve falhar ao inserir 'username' inválido", () => {
+      tarefasLogin.realizarLogin("usuarioInvalido", "senha");
+      validacoesLogin.validarLoginIncorreto();
+    });
 
-      it("Falha no campo 'password'", () => {
-        tarefasLogin.realizarLogin("usuario", "senhaInvalida");
-        validacoesLogin.validarLoginIncorreto();
-      });
-    }
-  );
+    it("Deve falhar ao inserir 'password' inválido", () => {
+      tarefasLogin.realizarLogin("usuario", "senhaInvalida");
+      validacoesLogin.validarLoginIncorreto();
+    });
+  });
 
-  context(
-    "Validar se ao clicar em login com os campos vazios terá um erro.",
-    () => {
-      it("Campo 'username' vazio", () => {
-        tarefasLogin.preencherUsuario("usuario");
-        validacoesLogin.validarSenhaObrigatoria();
-      });
+  context("CT03 - Deve exibir erro ao tentar fazer login com campos vazios.", () => {
+    it("Deve exibir erro ao tentar fazer login com 'username' vazio", () => {
+      tarefasLogin.realizarLogin("senha");
+      validacoesLogin.validarUsuarioObrigatorio();
+    });
 
-      it("Campo 'password' vazio", () => {
-        tarefasLogin.preencherSenha("senha");
-        validacoesLogin.validarUsuarioObrigatorio();
-      });
-    }
-  );
+    it("Deve exibir erro ao tentar fazer login com 'password' vazio", () => {
+      tarefasLogin.realizarLogin("usuario");
+      validacoesLogin.validarSenhaObrigatoria();
+    });
+  });
 });
