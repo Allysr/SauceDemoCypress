@@ -152,7 +152,7 @@ Então devem ser removidos todos os itens que estavam no carrinho.
 
 Filtrar
 
-- [ ] CT01 - Validar se ao filtrar por Filtro de A a Z terá o resultado ordenado.
+- [x] CT01 - Validar se ao filtrar por Filtro de A a Z terá o resultado ordenado.
 
 ```
 Dado que o usuário esteja na página de produtos
@@ -161,7 +161,7 @@ Quando clicar no filtro de "A a Z"
 Então devem aparecer todos os produtos desse filtro.
 ```
 
-- [ ] CT02 -Validar se ao filtrar po Filtro de Z a A terá o resultado ordenado.
+- [x] CT02 - Validar se ao filtrar po Filtro de Z a A terá o resultado ordenado.
 
 ```
 Dado que o usuário esteja na página de produtos
@@ -170,7 +170,7 @@ Quando clicar no filtro de "Z a A"
 Então devem aparecer todos os produtos desse filtro.
 ```
 
-- [ ] CT03 - Validar se ao filtrar por Menor para Maior terá o resultado ordenado.
+- [x] CT03 - Validar se ao filtrar por Menor para Maior terá o resultado ordenado.
 
 ```
 Dado que o usuário esteja na página de produtos
@@ -179,7 +179,7 @@ Quando clicar no filtro de "Menor para Maior"
 Então devem aparecer todos os produtos desse filtro.
 ```
 
-- [ ] CT04 - Validar se ao filtrar por Maior para Menor terá o resultado ordenado.
+- [x] CT04 - Validar se ao filtrar por Maior para Menor terá o resultado ordenado.
 
 ```
 Dado que o usuário esteja na página de produtos

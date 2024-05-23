@@ -27,12 +27,12 @@ describe("Login", () => {
   context(
     "CT03 - Deve exibir erro ao tentar fazer login com campos vazios.",
     () => {
-      it("Deve exibir erro ao tentar fazer login com 'username' vazio", () => {
+      it("Deve exibir erro ao tentar fazer login com 'username' vazio.", () => {
         tarefasLogin.tentarLogarSemUsuario("senha");
         validacoesLogin.usuarioObrigatorio();
       });
 
-      it("Deve exibir erro ao tentar fazer login com 'password' vazio", () => {
+      it("Deve exibir erro ao tentar fazer login com 'password' vazio.", () => {
         tarefasLogin.tentarLogarSemSenha("usuario");
         validacoesLogin.senhaObrigatoria();
       });
