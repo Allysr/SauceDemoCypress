@@ -49,7 +49,7 @@ Este documento descreve o plano de teste para o site Sauce demo
 - Menu
 - Filtrar
 - Adicionar item ao carrinho
-- Realizar compra
+- Checkout
 
 #### Métricas de qualidade:
 
@@ -220,9 +220,36 @@ Então deve ser removido o item.
 
 <br>
 
-Finalizar compra
+Checkout
 
-- [ ] CT01 - Validar se ao realizar os passos corretos a compra terá sucesso.
+- [x] CT01 - Validar continuidade do checkout ao preencher os dados corretos.
+
+```
+Dado que o usuário queira comprar um produto
+E clique em Add to Card
+E clique no carrinho
+E clique em "checkout"
+E preencha todos os campos com dados válidos
+Quando clicar em "continue"
+Então deve prosseguir para a página de Checkout: Overview.
+```
+
+- [x] CT02 - Validar se ao não inserir dados obrigatórios no checkout aparecerá a mensagem de erro.
+
+```
+Dado que o usuário queira comprar um produto
+E não preencha o <campo>
+Quando clicar em "continue"
+Então não deve aparecer a mensagem 'Error: <campo> is required"
+
+Exemplo:
+|First name  |
+|Last name   |
+|Postal Code |
+
+```
+
+- [x] CT03 - Validar sucesso ao finalizar o checkout.
 
 ```
 Dado que o usuário queira comprar um produto
@@ -232,11 +259,12 @@ E clique em "checkout"
 E preencha todos os campos com dados válidos
 E clique em "continue"
 Quando clicar em "finish"
-Então deve aparecer a mensagem "THANK YOU FOR YOUR ORDER".
-```
+Então deve prosseguir para a página de Checkout: Completo
+E aparecer a mensagem "Thank you for your order!".
 
 </details>
 
 ### Relatórios:
 
 ### Bugs:
+```

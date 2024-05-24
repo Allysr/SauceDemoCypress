@@ -12,12 +12,12 @@ describe("Login", () => {
   context(
     "CT02 - Deve exibir mensagem de falha ao inserir dados inválidos no login.",
     () => {
-      it("Deve falhar ao inserir 'username' inválido", () => {
+      it("Deve exibir erro ao inserir 'username' inválido", () => {
         tarefasLogin.realizarLogin("usuarioInvalido", "senha");
         validacoesLogin.loginIncorreto();
       });
 
-      it("Deve falhar ao inserir 'password' inválido", () => {
+      it("Deve exibir erro ao inserir 'password' inválido", () => {
         tarefasLogin.realizarLogin("usuario", "senhaInvalida");
         validacoesLogin.loginIncorreto();
       });
