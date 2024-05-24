@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 import tarefasLogin from "../../support/pagesObjects/login/tarefasLogin";
 import validacoesLogin from "../../support/pagesObjects/login/validacoesLogin";
 

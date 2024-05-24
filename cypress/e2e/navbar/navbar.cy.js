@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 import tarefasNavbar from "../../support/pagesObjects/navbar/tarefasNavbar";
 import validacoesNavbar from "../../support/pagesObjects/navbar/validacoesNavbar";
 import tarefasLogin from "../../support/pagesObjects/login/tarefasLogin";

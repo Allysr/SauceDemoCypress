@@ -1,4 +1,3 @@
-/// <reference types="cypress"/>
 import tarefasFiltro from "../../support/pagesObjects/filtros/tarefasFiltro";
 import tarefasLogin from "../../support/pagesObjects/login/tarefasLogin";
 import opcaoFiltro from "../../fixtures/opcoesFiltro.json";
