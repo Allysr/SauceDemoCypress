@@ -4,8 +4,8 @@
   "description": "Teste com Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --browser chrome",
-    "open": "npx cypress open"
+    "cy:run": "npx cypress run --browser chrome",
+    "cy:open": "npx cypress open"
   },
   "repository": {
     "type": "git",
