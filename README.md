@@ -1,19 +1,20 @@
-<div align="center">
-<img width="800px" alt="Site para testes automatizados Saucedemo" src="https://i.imgur.com/hJSmZi3.png" />
-</div>
-<br>
-
-### Objetivo:
+## Objetivo:
 
 O objetivo desses testes é verificar a funcionalidade login, menu, filtros,
 adicionar itens ao carrinho e checkout.
 
-### O que foi utilizado:
+<div align="center">
+<img width="700px" alt="Site para testes automatizados Saucedemo" src="https://i.imgur.com/hJSmZi3.png" />
+</div>
+<br>
 
+## Sobre o projeto:
+
+#### ➨ Tecnologias utilizadas
 - Cypress
 - Allure Report
 
-### Como executar o projeto:
+#### ➨ Como executar o projeto
 
 ```
 git clone git@github.com:Allysr/sauce-demo-web-test.git
@@ -21,11 +22,11 @@ cd sauce-demo-web-test
 npm run cy:open
 ```
 
-### Documentos:
+## Documentações:
 
 <details>
 <summary>Plano de teste</summary>
-
+   
 #### Introdução:
 
 Este documento descreve o plano de teste para o site Sauce demo
@@ -265,7 +266,17 @@ E aparecer a mensagem "Thank you for your order!".
 ```
 
 </details>
+<br> 
 
-### Relatórios:
 
-### Bugs:
+## Relatórios:
+<div align="center">
+<img width="700px" alt="Relatorio allure" src="https://i.imgur.com/ZIoqTyn.png" />
+</div>
+
+### Como executar o relatório:
+
+```
+npm run allure:results
+```
+
