@@ -18,7 +18,7 @@ de carrinho e inserção de dados para finalizar a compra.
 ```
 git clone git@github.com:Allysr/sauce-demo-web-test.git
 cd sauce-demo-web-test
-npm run test
+npm run cy:open
 ```
 
 ### Documentos:
