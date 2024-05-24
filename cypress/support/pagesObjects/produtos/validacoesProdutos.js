@@ -14,11 +14,15 @@ class ValidacoesProdutos {
   }
 
   produtoOrdenadoPrecoCrescente() {
-    cy.get(elementosProdutos.selecionarItem).first().should("contain", "Sauce Labs Onesie");
+    cy.get(elementosProdutos.selecionarItem)
+      .first()
+      .should("contain", "Sauce Labs Onesie");
   }
 
   produtoOrdenadoPrecoDecrescente() {
-    cy.get(elementosProdutos.selecionarItem).first().should("contain", "Sauce Labs Fleece Jacket");
+    cy.get(elementosProdutos.selecionarItem)
+      .first()
+      .should("contain", "Sauce Labs Fleece Jacket");
   }
 }
 

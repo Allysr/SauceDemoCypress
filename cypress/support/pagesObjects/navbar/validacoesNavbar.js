@@ -18,14 +18,13 @@ class ValidacoesNavbar {
     cy.get(elementosLogin.inputUsuario).should("be.visible");
   }
 
-  carrinhoEstaVazio(){
+  carrinhoEstaVazio() {
     cy.get(elementosNavbar.quantidadeItensCarrinho).should("not.exist");
   }
 
-  carrinhoContemItem(){
-    cy.get(elementosNavbar.quantidadeItensCarrinho).should("contain", "1")
+  carrinhoContemItem() {
+    cy.get(elementosNavbar.quantidadeItensCarrinho).should("contain", "1");
   }
-
 }
 
 export default new ValidacoesNavbar();

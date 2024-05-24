@@ -9,8 +9,8 @@ class ValidacoesCheckout {
 
   sucessoCheckoutCompleto() {
     cy.get(elementosCheckout.tituloPagina)
-    .contains("Checkout: Complete")
-    .should("be.visible");
+      .contains("Checkout: Complete")
+      .should("be.visible");
     cy.get(elementosCheckout.mensagemSucessoRealizarPedido)
       .contains("Thank you for your order!")
       .should("be.visible");

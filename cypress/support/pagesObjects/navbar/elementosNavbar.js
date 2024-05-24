@@ -5,5 +5,5 @@ export const elementosNavbar = {
   selecionarAbout: "#about_sidebar_link",
   selecionarLogout: "#logout_sidebar_link",
   selecionarResetApp: "#reset_sidebar_link",
-  quantidadeItensCarrinho: ".shopping_cart_badge"
+  quantidadeItensCarrinho: ".shopping_cart_badge",
 };

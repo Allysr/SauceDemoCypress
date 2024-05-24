@@ -38,5 +38,3 @@ class TarefasLogin {
 }
 
 export default new TarefasLogin();
-
-

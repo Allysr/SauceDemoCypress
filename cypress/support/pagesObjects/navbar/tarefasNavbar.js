@@ -21,11 +21,9 @@ class TarefasNavbar {
     cy.get(elementosNavbar.selecionarResetApp).click();
   }
 
-  clicarMenu(){
+  clicarMenu() {
     cy.get(elementosNavbar.selecionarMenu).click();
   }
-
-
 }
 
 export default new TarefasNavbar();
