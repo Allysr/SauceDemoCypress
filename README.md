@@ -262,9 +262,10 @@ Quando clicar em "finish"
 Então deve prosseguir para a página de Checkout: Completo
 E aparecer a mensagem "Thank you for your order!".
 
+```
+
 </details>
 
 ### Relatórios:
 
 ### Bugs:
-```
