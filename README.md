@@ -5,8 +5,8 @@
 
 ### Objetivo:
 
-O objetivo desses testes é verificar a funcionalidade
-de carrinho e inserção de dados para finalizar a compra.
+O objetivo desses testes é verificar a funcionalidade login, menu, filtros,
+adicionar itens ao carrinho e checkout.
 
 ### O que foi utilizado:
 
