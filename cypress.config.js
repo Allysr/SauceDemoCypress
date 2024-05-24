@@ -1,12 +1,12 @@
 const { defineConfig } = require("cypress");
+const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  video: false,
   e2e: {
-    baseUrl: 'https://www.saucedemo.com',
+    baseUrl: "https://www.saucedemo.com",
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      allureCypress(on);
     },
   },
 });
